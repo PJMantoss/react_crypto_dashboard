@@ -29,7 +29,15 @@ function App() {
             }
           });
 
-          filtered;
+          filtered = filtered.sort((a,b) => {
+            if(a.base_currency < b.base_currency){
+              return -1;
+            }
+
+            if(a.base_currency > b.base_currency){
+              return 1;
+            }
+          });
     }
   }, []);
 
