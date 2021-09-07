@@ -50,7 +50,19 @@ function App() {
 
   }, []);
 
-  useEffect(() => {}, [pair]);
+  useEffect(() => {
+    if(!first.current){
+      return;
+    }
+
+    let msg = {
+      type: "subscribe",
+      product_ids: [pair],
+      channels: ["ticker"]
+    }
+
+    let jsonMsg = JSON.stringify(msg);
+  }, [pair]);
 
   return (
     <div className="App">
