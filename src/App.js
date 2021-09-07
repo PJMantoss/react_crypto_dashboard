@@ -47,8 +47,10 @@ function App() {
     }
 
     apiCall();
-    
+
   }, []);
+
+  useEffect(() => {}, [pair]);
 
   return (
     <div className="App">
