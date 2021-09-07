@@ -80,6 +80,17 @@ function App() {
 
     fetchHistoricalData();
 
+    ws.current.onmessage = e => {
+      let data = JSON.parse(e.data);
+      if(data.type !== "ticker"){
+        return;
+      }
+
+      if(data.product_id === pair){
+        setPrice(data.price)
+      }
+    };
+
   }, [pair]);
 
   return (
