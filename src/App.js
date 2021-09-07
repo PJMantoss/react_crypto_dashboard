@@ -13,6 +13,18 @@ function App() {
   let first = useRef(false);
   const url = "https://api.pro.coinbase.com";
 
+  useEffect(() => {
+    ws.current = new WebSocket("wss://ws-feed.pro.coinbase.com");
+
+    let pairs = [];
+
+    const apiCall = async () => {
+      await fetch(url + "/products")
+          .then(res => res.json())
+          .then(data => pairs = data);
+    }
+  }, []);
+
   return (
     <div className="App">
       <h1>Hello</h1>
