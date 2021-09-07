@@ -17,5 +17,6 @@ export const formatData = data => {
         let date = new Date(ts * 1000);
         let day = date.getDate();
         let month = date.getMonth() + 1;
+        let year = date.getFullYear();
     })
 }
