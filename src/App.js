@@ -94,7 +94,19 @@ function App() {
 
   }, [pair]);
 
-  const handleSelect = () => {}
+  const handleSelect = e => {
+    let unSubMsg = {
+      type: "unsubscribe",
+      product_ids: [pair],
+      channels: ["ticker"]
+    }
+
+    let unSub = JSON.stringify(unSubMsg);
+
+    ws.current.send(unSub);
+
+    setPair(e.target.value);
+  }
 
   return (
     <div className="container">
