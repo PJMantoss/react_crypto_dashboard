@@ -8,6 +8,7 @@ function App() {
   const [pair, setPair] = useState("");
   const [price, setPrice] = useState("0.00");
   const [pastData, setPastData] = useState({});
+  const ws = useRef(null);
 
   return (
     <div className="App">
