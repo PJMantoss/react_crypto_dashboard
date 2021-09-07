@@ -37,6 +37,8 @@ function App() {
             if(a.base_currency > b.base_currency){
               return 1;
             }
+
+            return 0;
           });
     }
   }, []);
