@@ -66,7 +66,13 @@ function App() {
 
     let historicalDataUrl = `${url}/products/${pair}/candles?granularity=86400`;
 
-    let fetchHistoricalData = async () => {};
+    const fetchHistoricalData = async () => {
+      let dataArr = [];
+
+      await fetch()
+          .then()
+          .then();
+    };
 
   }, [pair]);
 
