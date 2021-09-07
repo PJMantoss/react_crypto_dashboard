@@ -26,4 +26,4 @@ const Dashboard = ({ price, data }) => {
     )
 };
 
-export default React;
+export default Dashboard;
