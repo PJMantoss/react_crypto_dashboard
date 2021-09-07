@@ -74,6 +74,10 @@ function App() {
           .then(data => (dataArr = data));
     };
 
+    let formattedData = formatData(dataArr);
+
+    setPastData(formattedData);
+
   }, [pair]);
 
   return (
