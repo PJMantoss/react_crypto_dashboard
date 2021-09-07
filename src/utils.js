@@ -18,5 +18,7 @@ export const formatData = data => {
         let day = date.getDate();
         let month = date.getMonth() + 1;
         let year = date.getFullYear();
+
+        let final = `${day}-${month}-${year}`;
     })
 }
