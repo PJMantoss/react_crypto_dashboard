@@ -78,6 +78,8 @@ function App() {
 
     setPastData(formattedData);
 
+    fetchHistoricalData();
+
   }, [pair]);
 
   return (
