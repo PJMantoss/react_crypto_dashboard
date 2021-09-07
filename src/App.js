@@ -94,8 +94,14 @@ function App() {
   }, [pair]);
 
   return (
-    <div className="App">
-      <h1>Hello</h1>
+    <div className="container">
+      {
+        <select>
+          {}
+        </select>
+      }
+
+      <Dashboard data={pastData} price={price} />
     </div>
   );
 }
