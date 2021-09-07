@@ -72,11 +72,11 @@ function App() {
       await fetch(historicalDataURL)
           .then(res => res.json())
           .then(data => (dataArr = data));
+
+          // let formattedData = formatData(dataArr);
+
+          // setPastData(formattedData);
     };
-
-    let formattedData = formatData(dataArr);
-
-    setPastData(formattedData);
 
     fetchHistoricalData();
 
