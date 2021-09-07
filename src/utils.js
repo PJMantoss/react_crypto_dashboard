@@ -23,5 +23,7 @@ export const formatData = data => {
         return final;
     });
 
-    let priceArr = data.map(val => {});
+    let priceArr = data.map(val => {
+        return val[4];
+    });
 }
