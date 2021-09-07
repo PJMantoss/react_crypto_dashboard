@@ -12,8 +12,16 @@ const Dashboard = ({ price, data }) => {
     };
 
     if(price === "0.00"){
-        return <h1>Please select a currency pair</h1>
+        return <h2>Please select a currency pair</h2>
     }
+
+    return(
+        <div className="dashboard">
+            <h2></h2>
+
+            <div className="chart-container"></div>
+        </div>
+    )
 };
 
 export default React;
