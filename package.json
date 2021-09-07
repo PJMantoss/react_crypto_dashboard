@@ -1,6 +1,7 @@
 {
   "name": "react_crypto_dashboard",
   "version": "0.1.0",
+  "homepage": "https://pjmantoss.github.io/react_crypto_dashboard",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
@@ -36,5 +37,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "github-pages": "^3.0.2"
   }
 }
