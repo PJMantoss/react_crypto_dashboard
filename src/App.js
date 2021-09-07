@@ -22,6 +22,14 @@ function App() {
       await fetch(url + "/products")
           .then(res => res.json())
           .then(data => pairs = data);
+
+          let filtered = pairs.filter(pair => {
+            if(pair.quote_currency === "USD"){
+              return pair;
+            }
+          });
+
+          filtered;
     }
   }, []);
 
