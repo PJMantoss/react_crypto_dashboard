@@ -101,8 +101,8 @@ function App() {
         <select name="currency" value={pair} onChange={handleSelect}>
           {currencies.map((cur, idx) => {
             return(
-              <option>
-                {}
+              <option key={idx} value={cur.id}>
+                {cur.display_name}
               </option>
             )
           })}
