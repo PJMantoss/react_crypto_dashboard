@@ -93,10 +93,12 @@ function App() {
 
   }, [pair]);
 
+  const handleSelect = () => {}
+
   return (
     <div className="container">
       {
-        <select>
+        <select name="currency" value={pair} onChange={handleSelect}>
           {}
         </select>
       }
