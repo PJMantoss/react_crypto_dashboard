@@ -99,7 +99,7 @@ function App() {
     <div className="container">
       {
         <select name="currency" value={pair} onChange={handleSelect}>
-          {}
+          {currencies.map((cur, idx) => {})}
         </select>
       }
 
