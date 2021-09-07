@@ -62,6 +62,12 @@ function App() {
     }
 
     let jsonMsg = JSON.stringify(msg);
+    ws.current.send(jsonMsg);
+
+    let historicalDataUrl = `${url}/products/${pair}/candles?granularity=86400`;
+
+    let fetchHistoricalData = async () => {};
+
   }, [pair]);
 
   return (
