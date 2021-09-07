@@ -1,1 +1,6 @@
-export const formatData = data => {}
+export const formatData = data => {
+    let finalData = {
+        labels: [],
+        datasets: []
+    }
+}
