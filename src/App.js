@@ -64,14 +64,14 @@ function App() {
     let jsonMsg = JSON.stringify(msg);
     ws.current.send(jsonMsg);
 
-    let historicalDataUrl = `${url}/products/${pair}/candles?granularity=86400`;
+    let historicalDataURL = `${url}/products/${pair}/candles?granularity=86400`;
 
     const fetchHistoricalData = async () => {
       let dataArr = [];
 
-      await fetch()
-          .then()
-          .then();
+      await fetch(historicalDataURL)
+          .then(res => res.json())
+          .then(data => (dataArr = data));
     };
 
   }, [pair]);
