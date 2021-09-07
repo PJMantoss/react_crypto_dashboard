@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import Dashboard from './components/Dashboard';
+import { formatData } from './utils';
 
 import './App.css';
 
@@ -73,9 +74,9 @@ function App() {
           .then(res => res.json())
           .then(data => (dataArr = data));
 
-          // let formattedData = formatData(dataArr);
+          let formattedData = formatData(dataArr);
 
-          // setPastData(formattedData);
+          setPastData(formattedData);
     };
 
     fetchHistoricalData();
