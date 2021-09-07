@@ -26,4 +26,9 @@ export const formatData = data => {
     let priceArr = data.map(val => {
         return val[4];
     });
+
+    priceArr.reverse();
+    dates.reverse();
+    finalData.labels = dates;
+    finalData.datasets[0].data = priceArr;
 }
