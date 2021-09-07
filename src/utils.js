@@ -10,5 +10,7 @@ export const formatData = data => {
                 fill: false
             }
         ]
-    }
+    };
+
+    let dates = data.map(val => {})
 }
