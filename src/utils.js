@@ -31,4 +31,6 @@ export const formatData = data => {
     dates.reverse();
     finalData.labels = dates;
     finalData.datasets[0].data = priceArr;
+
+    return finalData;
 }
