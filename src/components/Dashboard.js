@@ -10,6 +10,10 @@ const Dashboard = ({ price, data }) => {
         responsive: true,
         maintainAspectRatio: false
     };
+
+    if(price === "0.00"){
+        return <h1>Please select a currency pair</h1>
+    }
 };
 
 export default React;
