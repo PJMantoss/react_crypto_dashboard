@@ -45,6 +45,9 @@ function App() {
 
           first.current = true;
     }
+
+    apiCall();
+    
   }, []);
 
   return (
