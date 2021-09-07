@@ -17,9 +17,11 @@ const Dashboard = ({ price, data }) => {
 
     return(
         <div className="dashboard">
-            <h2></h2>
+            <h2>{`$${price}`}</h2>
 
-            <div className="chart-container"></div>
+            <div className="chart-container">
+                <Line data={data} options={opts} />
+            </div>
         </div>
     )
 };
