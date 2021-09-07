@@ -1,7 +1,12 @@
-import React from 'react';
+import React, { useState, useRef, useEffect } from 'react';
+import Dashboard from './components/Dashboard';
+
 import './App.css';
 
 function App() {
+  const [currencies, setCurrencies] = useState([]);
+  const [pair, setPair] = useState("");
+  
   return (
     <div className="App">
       <h1>Hello</h1>
