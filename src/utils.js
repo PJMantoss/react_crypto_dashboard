@@ -20,5 +20,8 @@ export const formatData = data => {
         let year = date.getFullYear();
 
         let final = `${day}-${month}-${year}`;
-    })
+        return final;
+    });
+
+    let priceArr = data.map(val => {});
 }
