@@ -40,6 +40,10 @@ function App() {
 
             return 0;
           });
+
+          setCurrencies(filtered);
+
+          first.current = true;
     }
   }, []);
 
